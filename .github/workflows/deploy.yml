@@ -24,7 +24,6 @@ jobs:
       # Construir y subir la imagen de la aplicación
       - name: Build and push PHP Docker image
         run: |
-          cd php
           docker build -t ${{ secrets.DOCKER_USERNAME }}/calculadora:v1 .
           docker push ${{ secrets.DOCKER_USERNAME }}/calculadora:v1
       
@@ -35,7 +34,7 @@ jobs:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.REMOTE_KEY }}
-          source: ./compose.yml
+          source: ./compose.yaml
           target: ~/deploy/
       
       # Desplegar la aplicación en el servidor remoto usando docker-compose
