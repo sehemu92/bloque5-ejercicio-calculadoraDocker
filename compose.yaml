@@ -1,6 +1,6 @@
 services:
   php:
-    image: sehemudev/calculadoraBloque5:v1
+    image: sehemudev/calculadorabloque5:v1
     container_name: calculadoraAppBloque5
     ports:
       - "8080:80"
