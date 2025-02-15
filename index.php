@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="number" step="any" name="a" placeholder="Primer número" required>
             <input type="number" step="any" name="b" placeholder="Segundo número">
             <div>
-                <button type="submit" name="suma">Suma</button>
+                <button type="submit" name="suma">Suma (+)</button>
                 <button type="submit" name="resta">Resta</button>
                 <button type="submit" name="multiplicacion">Multiplica</button>
                 <button type="submit" name="division">Divide</button>
